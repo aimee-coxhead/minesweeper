@@ -1,12 +1,39 @@
 document.addEventListener('DOMContentLoaded', startGame)
 
 // Define your `board` object here!
-// var board = 
+var board = {cells: [ 
+  {
+    row: 0,
+    col: 0,
+    isMine: "",
+    hidden: true
+  }, 
+  {
+    row: 0,
+    col: 1,
+    isMine: "",
+    hidden: true
+  }, 
+  {
+    row: 1,
+    col: 0,
+    isMine: "",
+    hidden: true
+  }, 
+  {
+    row: 1,
+    col: 1,
+    isMine: "",
+    hidden: true
+  }]
+}
+ 
+
 
 function startGame () {
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
-}
+} 
 
 // Define this function to look for a win condition:
 //
