@@ -78,10 +78,10 @@ for (var a=0; a < board.cells.length; a++){
 // 1. Are all of the cells that are NOT mines visible?
 // 2. Are all of the mines marked?
 function checkForWin () {
-  for (var c=0; c < board.cells.length; c++){
-    if (board.cells[c].isMine === true && !board.cells[c].isMarked === true){
+  for (var a =0; a < board.cells.length; a++){
+    if (board.cells[a].isMine === true && !board.cells[a].isMarked === true){
       return;
-    }else if(!board.cells[c].isMine === true && board.cells[c].hidden === true){
+    }else if(!board.cells[a].isMine === true && board.cells[a].hidden === true){
       return;
     }
   }
